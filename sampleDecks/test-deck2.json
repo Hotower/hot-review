@@ -1,0 +1,22 @@
+{
+    "name": "test-deck2",
+    "cards": [
+        {
+            "text": {
+                "front": "this is the surface 1, but in deck 2",
+                "hint": "this is the hint 1, but in deck 2",
+                "back": "this is the back 1, but in deck 2"
+            },
+            "tag": ["tag1", "tag2"]
+        },
+
+        {
+            "text": {
+                "front": "this is the surface 2, but in deck 2",
+                "hint": "",
+                "back": "this is the back 2, but in deck 2\n(this card has no hint)"
+            },
+            "tag": ["tag2"]
+        }
+    ]
+}
