@@ -15,7 +15,7 @@ def mapUsDeck(allDecks, usDeck):
     return res
 
 def openJson(fileName = "decks.json"):
-    file = open(fileName, "r")
+    file = open(fileName, "r", encoding = "utf-8")
     res = safeEval(file.read())
     return res
 
