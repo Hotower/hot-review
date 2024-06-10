@@ -1,0 +1,25 @@
+{
+    "name": "test-deck3",
+    "cards": [
+        {
+            "text": {
+                "front": "this is the surface 1, but in deck 3",
+                "hint": "this is the hint 1, but in deck 3",
+                "back": "this is the back 1, but in deck 3"
+            },
+            "tag": [
+                "tag1"
+            ]
+        },
+        {
+            "text": {
+                "front": "this is the surface 2, but in deck 3",
+                "hint": "this is the hint 2, but in deck 3",
+                "back": "this is the back 2, but in deck 3"
+            },
+            "tag": [
+                "tag3"
+            ]
+        }
+    ]
+}

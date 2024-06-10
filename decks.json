@@ -1,4 +1,12 @@
 [
-    "./sampleDecks/test-deck1.json",
-    "./sampleDecks/test-deck2.json"
+    [
+        "./sampleDecks/test-deck1.json",
+        "./sampleDecks/test-deck2.json",
+        "./sampleDecks/test-deck3.json"
+    ],
+    [
+        1,
+        0,
+        1,
+    ]
 ]

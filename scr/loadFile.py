@@ -1,4 +1,6 @@
 import ast
+import json
+from . import ioMix
 
 def safeEval(expression):
     try:
@@ -18,6 +20,10 @@ def openJson(fileName = "decks.json"):
     file = open(fileName, "r", encoding = "utf-8")
     res = safeEval(file.read())
     return res
+
+def writeHabbit(deckHabbit):
+    file = open("decks.json", "w", encoding = "utf-8")
+    file.write(ioMix.formatListPrint(deckHabbit))
 
 if __name__ == "__main__":
     print(openJson())

@@ -22,6 +22,19 @@ def getCh():
         impl = _GetchUnix()
     return impl.decode()
 
+def formatListPrint(printList, indent = 4, sep = (",\n", "\n"), initIndent = 0, end = 1):
+    ret = " "*initIndent + "[" + sep[1]
+    for subList in printList:
+        if type(subList) == list:
+            ret = ret + formatListPrint(subList, indent = indent, sep = sep, initIndent = initIndent + indent, end = printList.index(subList) == len(printList) - 1)
+        else:
+            if type(subList) == str:
+                ret = ret + " "*(initIndent + indent) + "\"" + subList + "\"" + sep[printList.index(subList) == len(printList) - 1]
+            else:
+                ret = ret + " "*(initIndent + indent) + str(subList) + sep[printList.index(subList) == len(printList) - 1]
+    ret = ret + " "*initIndent + "]" + sep[end]
+    return ret
+
 if __name__ == "__main__":
     clearScreen()
     print("--- test start ---")
@@ -34,5 +47,7 @@ if __name__ == "__main__":
         a = getCh()
     print("\n")
     '''
+
+    print(formatListPrint([[["aaa", 2, 3], [4, 5]], [6, 7, 8],  9]))
 
     print("--- test end ---")
