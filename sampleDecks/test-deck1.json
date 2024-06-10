@@ -7,16 +7,20 @@
                 "hint": "this is the hint 1",
                 "back": "this is the back 1"
             },
-            "tag": ["tag1", "tag2"]
+            "tag": [
+                "tag1",
+                "tag2"
+            ]
         },
-
         {
             "text": {
-                "front": "这个 is the surface 2",
+                "front": "\u8fd9\u4e2a is the surface 2",
                 "hint": "",
                 "back": "this is the back 2\n(this card has no hint)"
             },
-            "tag": ["tag1"]
+            "tag": [
+                "tag1"
+            ]
         }
     ]
 }

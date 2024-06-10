@@ -39,7 +39,7 @@ if __name__ == "__main__":
                       "Press Y to select all\n"
                       "Press N to cancel all\n"
                       "Press R to reverse selection\n"
-                      "Press Z, / to change pages"
+                      "Press Z, / to change pages\n"
                       "Press Q to back to home\n")
                 while True:
                     selChoice = ioMix.getCh()
@@ -74,3 +74,12 @@ if __name__ == "__main__":
                 cardNumStr = "-1"
             cardNum = int(cardNumStr)
             reviewMod.reviewByNumber(loadFile.mapUsDeck(DECKS, usDeck), cardNum)
+
+        elif usChoice == '3':
+            tagNameList = []
+            while True:
+                tagName = input("Name of tags you want to review(keep empty to stop input): ")
+                if tagName == "":
+                    break
+                tagNameList.append(tagName)
+            reviewMod.reviewByTags(loadFile.mapUsDeck(DECKS, usDeck), tagNameList)
